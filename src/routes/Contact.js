@@ -1,7 +1,21 @@
+import Hero from "../component/Hero"
+import Navbar from "../component/Navbar"
+import AboutImg from '../assets/2.jpg'
+import Footer from "../component/Footer"
+import ContactForm from "../component/ContactForm"
 export default function Contact (){
   return(
   <>
-  <h1>This is Contact</h1>
-  </>
+    <Navbar />
+      <Hero
+        cName="hero-mid"
+        heroImg={AboutImg}
+        title="Contact"
+        btnClass="hide"
+      />
+      <ContactForm/>
+      <Footer/>
+    </>
+
   )
   }
